@@ -13,3 +13,5 @@ app.listen(port, async () => {
 
   await connect();
 });
+
+export default app;
