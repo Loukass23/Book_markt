@@ -6,7 +6,9 @@ dotenv.config({ path: __dirname + "/.env" });
 
 const port = process.env.PORT;
 const app = createServer();
-
+app.get("/hello", (req, res) => {
+  res.send("Hello World!");
+});
 app.listen(port, async () => {
   console.log(`App is running at http://localhost:${port}`);
 
